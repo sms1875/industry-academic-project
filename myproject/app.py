@@ -4,8 +4,8 @@ from flaskext.mysql import MySQL
 mysql = MySQL()
 app=Flask(__name__)
 
-app.config['MYSQL_DATABASE_USER']='dbuser'
-app.config['MYSQL_DATABASE_PASSWORD']='0000'
+app.config['MYSQL_DATABASE_USER']='bank2014'
+app.config['MYSQL_DATABASE_PASSWORD']='qwer1234'
 app.config['MYSQL_DATABASE_DB']='user_info'
 app.config['MYSQL_DATABASE_HOST']='localhost'
 app.secret_key="ABCDEFG"
