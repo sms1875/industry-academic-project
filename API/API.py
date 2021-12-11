@@ -1,12 +1,11 @@
-from utils import get_session_id
+import requests
 
 
+def getUserinfo():
+  URL = 'https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v2/'
 
-
-
-session = requests.Session()
-
-
-def getAppList():
-  request = session.post("https://api.steampowered.com/ISteamApps/GetAppList/v2")
-  return request
+  steamids = {'steamids': 'steamids'} 
+  key = {'key': 'authentication key'} 
+  res = requests.get(URL, steamids=steamids, key=key)
+  return res
+  #»ç¿ëÀÚ Á¤º¸ È¹µæ
