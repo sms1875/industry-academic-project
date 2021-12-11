@@ -25,8 +25,8 @@ def get_result_file_name():
     return result_file_name
 
 
-def get_steam_id():
-    steam_id = '76561198028705366'
+def get_steam_id(steamid):
+    steam_id = steamid
 
     return steam_id
 
